@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space-buy | Твій космічний мерч</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">SPACE-BUY</div>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#shop">Каталог</a></li>
+                <li class="cart-link">
+                    <a href="#">Кошик <span id="cart-count">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Всесвіт у тебе вдома</h1>
+            <p>Від професійних телескопів до затишних нічників-астронавтів.</p>
+            <a href="#shop" class="btn">Переглянути товари</a>
+        </div>
+    </section>
+
+    <section id="shop" class="products">
+        <h2 class="section-title">Наш асортимент</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-icon">👨‍🚀</div>
+                <h3>Нічник "Астронавт"</h3>
+                <p>Проекція туманностей та зірок на 360°.</p>
+                <div class="price">1,250 грн</div>
+                <button class="buy-btn" onclick="addToCart('Нічник Астронавт')">Додати у кошик</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">👕</div>
+                <h3>Худі "NASA Edition"</h3>
+                <p>Якісний принт та теплий фліс для холодних ночей.</p>
+                <div class="price">1,100 грн</div>
+                <button class="buy-btn" onclick="addToCart('Худі NASA')">Додати у кошик</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🔭</div>
+                <h3>Телескоп "StarSeeker"</h3>
+                <p>Ідеальний для спостереження за Місяцем та планетами.</p>
+                <div class="price">6,800 грн</div>
+                <button class="buy-btn" onclick="addToCart('Телескоп')">Додати у кошик</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🌋</div>
+                <h3>Лава-лампа "Cosmos"</h3>
+                <p>Гіпнотичний рух магми у фіолетових кольорах.</p>
+                <div class="price">950 грн</div>
+                <button class="buy-btn" onclick="addToCart('Лава-лампа')">Додати у кошик</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Space-buy. Твій гід у світі космічних речей.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Кошик | Space-buy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SPACE-BUY</div>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Кошик (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart-container">
+        <h2>Твій кошик</h2>
+        <div id="cart-items">
+            </div>
+        <div class="cart-total">
+            <h3>Разом: <span id="total-price">0</span> грн</h3>
+            <button class="btn" onclick="clearCart()">Очистити кошик</button>
+            <button class="btn checkout-btn">Оформити замовлення</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>displayCart();</script> </body>
+</html>

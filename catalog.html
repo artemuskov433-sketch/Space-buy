@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог | Space-buy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SPACE-BUY</div>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Кошик (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <h2 class="section-title">Наші товари</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-icon">👨‍🚀</div>
+                <h3>Нічник Астронавт</h3>
+                <p class="price">1200 грн</p>
+                <button class="buy-btn" onclick="addToCart('Нічник Астронавт', 1200)">Додати</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon">👕</div>
+                <h3>Худі Космос</h3>
+                <p class="price">950 грн</p>
+                <button class="buy-btn" onclick="addToCart('Худі Космос', 950)">Додати</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon">🔭</div>
+                <h3>Телескоп</h3>
+                <p class="price">5400 грн</p>
+                <button class="buy-btn" onclick="addToCart('Телескоп', 5400)">Додати</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon">🌋</div>
+                <h3>Лава-лампа</h3>
+                <p class="price">800 грн</p>
+                <button class="buy-btn" onclick="addToCart('Лава-лампа', 800)">Додати</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
